@@ -1,0 +1,29 @@
+def calculadora (num1, num2, operacao): 
+ if ( operacao == 1): 
+  return num1 + num2
+ elif (operacao == 2):
+  return num1 - num2
+ elif (operacao == 3):
+  return num1 * num2
+ elif (operacao == 4):
+  return num1 / num2
+ else:
+  return 0
+
+executar = True
+
+while (executar == True): 
+ print("Qual operação você quer realizar?")
+ print("1: soma 2: subtração 3: multiplicação 4: divisão 0: sair")
+   operacao = int(imput())
+ if(operacao < 0) or (operacao > 4) :
+  print("Essa opção não existe")
+ elif(operacao == 0 ) :
+   executar = False
+ else:
+   print("insira o primeiro numero da operação:")
+   num1 = int(imput())
+   print("insira o segundo numero da operação!")
+   num2 = int(imput())
+   resultado = calculadora(num1, num2, operacao)
+   print("o resultado é:", resultado)
