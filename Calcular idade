@@ -1,0 +1,18 @@
+print("Qual seu nome?")
+nome = input ()
+
+executar = True
+
+while (executar == True) : 
+ print ("Qual ano em que nasceu?")
+ try:
+   ano = int (input ())
+   if (ano < 1922) or (ano > 2021) :
+    print("O ano precisa ser entre 1922 e 2021")
+   else: 
+    idade = 2022 - ano
+    print("O usuario", nome, "completou ou irá completar de idade em 2022")
+    executar = False
+
+ except:
+  print("Os anos precisam ser escritos apenas com numeros")
